@@ -5,8 +5,8 @@ import { CoursRoutingModule } from './cours-routing.module';
 import { CoursComponent } from './cours.component';
 import { AddCoursComponent } from './add-cours/add-cours.component';
 import { UpdateCoursComponent } from './update-cours/update-cours.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -18,9 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     CommonModule,
     CoursRoutingModule,
-    ReactiveFormsModule,
-    FormsModule,
-    HttpClientModule
+    SharedModule
   ]
 })
 export class CoursModule { }

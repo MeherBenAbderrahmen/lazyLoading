@@ -5,8 +5,8 @@ import { UserRoutingModule } from './user-routing.module';
 import { UserComponent } from './user.component';
 import { AddUserComponent } from './add-user/add-user.component';
 import { UpdateUserComponent } from './update-user/update-user.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -18,9 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     CommonModule,
     UserRoutingModule,
-    ReactiveFormsModule,
-    FormsModule,
-    HttpClientModule
+    SharedModule
   ]
 })
 export class UserModule { }
